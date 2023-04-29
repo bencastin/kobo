@@ -16,12 +16,12 @@ When("I navigate to kobosafe", () => {
   // Hover mouse on VAS
   cy.get('div[class="nav-item"]').contains("VAS").click();
   //Click Kobocare
-  cy.get('a[href="/kobosafe/?lang=en"]')
+  kobo.kobosafeLocator()
     .first()
     .contains("Kobosafe")
     .click({ force: true });
 });
 
 Then("I click get started on the kobosafe page", () => {
-  cy.get('button[type="button"]').contains("GET STARTED");
+  kobo.getStartedButton().contains("GET STARTED");
 });

@@ -1,11 +1,11 @@
 export class koboPom {
-  city() {
-    return cy.get('[placeholder="City"]');
+  getStartedButton() {
+    return cy.get('button[type="button"]');
   }
-  nextOfKinPhone() {
-    return cy.get('[name="phone"]');
+  kobocareLocator(){
+    return cy.get('a[href="/kobocare/?lang=en"]');
   }
-  taxRate() {
-    return cy.get('[placeholder="Tax Rate"]');
+  kobosafeLocator(){
+    return cy.get('a[href="/kobosafe/?lang=en"]');
   }
 }
