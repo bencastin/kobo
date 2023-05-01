@@ -2,10 +2,13 @@ export class koboPom {
   getStartedButton() {
     return cy.get('button[type="button"]');
   }
-  kobocareLocator(){
+  kobocareLocator() {
     return cy.get('a[href="/kobocare/?lang=en"]');
   }
-  kobosafeLocator(){
+  kobosafeLocator() {
     return cy.get('a[href="/kobosafe/?lang=en"]');
+  }
+  payfastaLocator() {
+    return cy.get('a[href="/payfasta/?lang=en"]');
   }
 }
