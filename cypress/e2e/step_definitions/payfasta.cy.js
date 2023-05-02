@@ -12,7 +12,7 @@ Given("I navigate to the website", () => {
   // Load "Kobo360 website"
   cy.visit("https://www.kobo360.com/");
 });
-When("I navigate to kobocare", () => {
+When("I navigate to Payfasta", () => {
   // Hover mouse on VAS
   cy.get('div[class="nav-item"]').contains("VAS").click();
   //Click Payfasta
